@@ -1,10 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveElite | Car Reviews, Maintenance & EV Tech</title>
+    <meta name="description" content="DriveElite delivers in-depth car reviews, professional DIY maintenance guides, and clear explanations of EV and future automotive tech.">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-$END$
+<header class="main-header">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="logo">Drive<span>Elite</span></a>
+        <button class="mobile-nav-toggle" aria-label="Open menu" type="button"></button>
+        <nav class="primary-nav nav-collapsible">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories/reviews.html">Reviews</a></li>
+                <li><a href="categories/maintenance.html">Maintenance</a></li>
+                <li><a href="categories/ev-tech.html">EV Tech</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section style="margin: 1.75rem 0 1rem; border: 1px solid var(--border); background: linear-gradient(135deg, #171a20 0%, #2d2e30 100%); border-radius: 16px; padding: 28px; color: white;">
+        <div style="max-width: 78ch;">
+            <p style="color: rgba(255,255,255,0.75); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 800; font-size: 0.75rem;">
+                Reviews • Maintenance • EV Tech
+            </p>
+            <h1 style="margin-top: 10px; font-size: 2.3rem; line-height: 1.12;">
+                Automotive intelligence, without the fluff.
+            </h1>
+            <p style="margin-top: 10px; color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                Long-form reviews, expert DIY maintenance, and clear EV tech explainers—built for people who want real details.
+            </p>
+            <div style="display:flex; flex-wrap: wrap; gap: 10px; margin-top: 16px;">
+                <a href="categories/reviews.html" style="display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: white; text-decoration: none; border-radius: 999px; padding: 8px 12px; font-weight: 800; font-size: 0.9rem;">Browse Reviews</a>
+                <a href="categories/maintenance.html" style="display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: white; text-decoration: none; border-radius: 999px; padding: 8px 12px; font-weight: 800; font-size: 0.9rem;">DIY Maintenance</a>
+                <a href="categories/ev-tech.html" style="display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: white; text-decoration: none; border-radius: 999px; padding: 8px 12px; font-weight: 800; font-size: 0.9rem;">EV &amp; Future Tech</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="article-layout" style="margin-top: 0;">
+        <section>
+            <div style="display:flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                <h2 style="font-size: 1.4rem;">Latest</h2>
+                <p style="color: var(--muted); font-size: 0.95rem;">Updated guides &amp; long-form reviews.</p>
+            </div>
+
+            <section class="posts-grid" aria-label="Latest articles" style="margin-top: 1rem;">
+        <!-- Reviews & Comparisons -->
+        <a href="posts/Reviews &amp; Comparisons/tesla-model-3-2026-review.html" class="card">
+            <div class="card-content">
+                <span class="tag">Reviews</span>
+                <h3>2026 Tesla Model 3 Review: The AI5 Era</h3>
+                <p>Technical deep-dive into HW5 (AI5), FSD v14, and the new “Standard” trim efficiency.</p>
+            </div>
+        </a>
+        <a href="posts/Reviews &amp; Comparisons/toyota-rav4-reliability-report.html" class="card">
+            <div class="card-content">
+                <span class="tag">Reviews</span>
+                <h3>Toyota RAV4 Reliability Report 2026</h3>
+                <p>A technical breakdown of cable corrosion risks, infotainment stability, and hybrid battery longevity.</p>
+            </div>
+        </a>
+        <a href="posts/Reviews &amp; Comparisons/porsche-911-gt3-performance-review.html" class="card">
+            <div class="card-content">
+                <span class="tag">Reviews</span>
+                <h3>2026 Porsche 911 GT3 (992.2) Performance Review</h3>
+                <p>Engineering deep-dive, lap-time context, anti-dive suspension analysis, and Weissach Package details.</p>
+            </div>
+        </a>
+        <a href="posts/Reviews &amp; Comparisons/hyundai-ioniq-6-long-term-test.html" class="card">
+            <div class="card-content">
+                <span class="tag">Reviews</span>
+                <h3>2026 Hyundai Ioniq 6 Long-Term Test</h3>
+                <p>12 months of data: real efficiency, OTA updates, battery degradation, and daily life with E-GMP.</p>
+            </div>
+        </a>
+        <a href="posts/Reviews &amp; Comparisons/ford-f150-vs-ram-1500.html" class="card">
+            <div class="card-content">
+                <span class="tag">Buying</span>
+                <h3>2026 Ford F-150 vs. Ram 1500</h3>
+                <p>PowerBoost vs Hurricane, towing and payload realities, and which cabin actually feels premium.</p>
+            </div>
+        </a>
+        <a href="posts/Reviews &amp; Comparisons/honda-civic-used-buying-guide.html" class="card">
+            <div class="card-content">
+                <span class="tag">Buying</span>
+                <h3>Used Honda Civic Buying Guide (2026)</h3>
+                <p>10th/11th gen checklist, CVT longevity, oil-dilution history, and what to inspect before you buy.</p>
+            </div>
+        </a>
+        <a href="posts/Reviews &amp; Comparisons/best-luxury-sedans-comparison.html" class="card">
+            <div class="card-content">
+                <span class="tag">Comparison</span>
+                <h3>Best Luxury Sedans 2026: Flagship Comparison</h3>
+                <p>S‑Class vs 7 Series vs Lucid Air Sapphire vs Genesis G90—comfort, tech, and ownership reality.</p>
+            </div>
+        </a>
+
+        <!-- In-feed ad (1 per 6–8 cards) -->
+        <div class="ad-unit ad-infeed" style="grid-column: 1 / -1;">
+            <div class="ad-placeholder">Advertisement</div>
+        </div>
+
+        <!-- Maintenance & DIY -->
+        <a href="posts/Maintenance &amp; DIY/how-to-change-engine-oil.html" class="card">
+            <div class="card-content">
+                <span class="tag">Maintenance</span>
+                <h3>How to Change Your Engine Oil (DIY)</h3>
+                <p>Tools, safety, torque basics, and pro tips to save money while extending engine life.</p>
+            </div>
+        </a>
+        <a href="posts/Maintenance &amp; DIY/brake-pad-replacement-guide.html" class="card">
+            <div class="card-content">
+                <span class="tag">Maintenance</span>
+                <h3>DIY Brake Pad Replacement</h3>
+                <p>Step-by-step guide, pad material choices, and the safety checks that actually matter.</p>
+            </div>
+        </a>
+        <a href="posts/Maintenance &amp; DIY/check-engine-light-meaning.html" class="card">
+            <div class="card-content">
+                <span class="tag">Diagnostics</span>
+                <h3>Check Engine Light: Meaning & Next Steps</h3>
+                <p>Top causes, solid vs flashing urgency, and how to use an OBD‑II scanner effectively.</p>
+            </div>
+        </a>
+        <a href="posts/Maintenance &amp; DIY/car-battery-maintenance-tips.html" class="card">
+            <div class="card-content">
+                <span class="tag">Maintenance</span>
+                <h3>Car Battery Care 2026</h3>
+                <p>Maximizing battery life for ICE, hybrids, and EVs—with practical storage/charging rules.</p>
+            </div>
+        </a>
+        <a href="posts/Maintenance &amp; DIY/coolant-system-flush-steps.html" class="card">
+            <div class="card-content">
+                <span class="tag">Maintenance</span>
+                <h3>How to Flush Your Cooling System</h3>
+                <p>Prevent overheating: DIY flush steps, choosing the right coolant, and avoiding common mistakes.</p>
+            </div>
+        </a>
+        <a href="posts/Maintenance &amp; DIY/spark-plug-replacement-intervals.html" class="card">
+            <div class="card-content">
+                <span class="tag">Maintenance</span>
+                <h3>Spark Plug Guide 2026</h3>
+                <p>Intervals, symptoms, and why ruthenium plugs are a smart upgrade for turbo engines.</p>
+            </div>
+        </a>
+        <a href="posts/Maintenance &amp; DIY/diy-headlight-restoration.html" class="card">
+            <div class="card-content">
+                <span class="tag">DIY</span>
+                <h3>DIY Headlight Restoration</h3>
+                <p>Wet sanding, polishing, and UV protection steps to keep lenses clear for years.</p>
+            </div>
+        </a>
+        <a href="posts/Maintenance &amp; DIY/transmission-fluid-check-guide.html" class="card">
+            <div class="card-content">
+                <span class="tag">Maintenance</span>
+                <h3>Transmission Fluid Check Guide</h3>
+                <p>Dipstick vs sealed systems, fluid color analysis, and realistic service intervals.</p>
+            </div>
+        </a>
+
+        <!-- EV & Future Tech -->
+        <a href="posts/EV &amp; Future Tech/solid-state-batteries-explained.html" class="card">
+            <div class="card-content">
+                <span class="tag">EV Tech</span>
+                <h3>Solid-State Batteries Explained (2026)</h3>
+                <p>What’s real vs hype: energy density, safety gains, milestones, and the path to mass production.</p>
+            </div>
+        </a>
+        <a href="posts/EV &amp; Future Tech/home-ev-charging-station-installation.html" class="card">
+            <div class="card-content">
+                <span class="tag">EV Tech</span>
+                <h3>Home EV Charging Installation Guide 2026</h3>
+                <p>Level 1 vs Level 2, NACS transition, cost breakdowns, and DIY vs pro decision points.</p>
+            </div>
+        </a>
+        <a href="posts/EV &amp; Future Tech/ev-range-anxiety-how-to-overcome.html" class="card">
+            <div class="card-content">
+                <span class="tag">EV</span>
+                <h3>Overcoming EV Range Anxiety in 2026</h3>
+                <p>How NACS, 800V architectures, and smarter routing make road trips easier than you think.</p>
+            </div>
+        </a>
+        <a href="posts/EV &amp; Future Tech/autonomous-driving-levels-guide.html" class="card">
+            <div class="card-content">
+                <span class="tag">Autonomy</span>
+                <h3>SAE Autonomous Driving Levels (2026)</h3>
+                <p>Clear guide from Level 0 to Level 5, with what Level 3/4 actually mean in the real world.</p>
+            </div>
+        </a>
+        <a href="posts/EV &amp; Future Tech/apple-carplay-next-gen-features.html" class="card">
+            <div class="card-content">
+                <span class="tag">In-Car Tech</span>
+                <h3>Apple CarPlay 2026: Next-Gen Features</h3>
+                <p>Multi-screen integration, deeper vehicle controls, and what iOS 26 changes inside the cabin.</p>
+            </div>
+        </a>
+        <a href="posts/EV &amp; Future Tech/future-of-hydrogen-cars-2026.html" class="card">
+            <div class="card-content">
+                <span class="tag">Future Tech</span>
+                <h3>The Future of Hydrogen Cars (2026)</h3>
+                <p>Fuel-cell reality check: new models, infrastructure constraints, and where hydrogen truly fits.</p>
+            </div>
+        </a>
+        <a href="posts/EV &amp; Future Tech/top-electric-trucks-coming-soon.html" class="card">
+            <div class="card-content">
+                <span class="tag">EV</span>
+                <h3>Top Upcoming Electric Trucks (2026–2027)</h3>
+                <p>What’s coming next: range, pricing, and the specs that matter for towing and daily use.</p>
+            </div>
+        </a>
+            </section>
+        </section>
+
+        <aside class="sidebar" aria-label="Sidebar">
+            <div class="widget popular-posts">
+                <h3>Popular</h3>
+                <ul>
+                    <li><a href="posts/Reviews &amp; Comparisons/tesla-model-3-2026-review.html">2026 Tesla Model 3 Review (AI5)</a></li>
+                    <li><a href="posts/EV &amp; Future Tech/home-ev-charging-station-installation.html">Home EV Charging Installation (2026)</a></li>
+                    <li><a href="posts/Maintenance &amp; DIY/how-to-change-engine-oil.html">How to Change Your Engine Oil</a></li>
+                    <li><a href="posts/Reviews &amp; Comparisons/toyota-rav4-reliability-report.html">Toyota RAV4 Reliability Report</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Browse by category</h3>
+                <ul style="list-style: none; margin-top: 10px; display: grid; gap: 8px;">
+                    <li><a href="categories/reviews.html" style="text-decoration:none; color: var(--dark);">Reviews &amp; Comparisons</a></li>
+                    <li><a href="categories/buying-guides.html" style="text-decoration:none; color: var(--dark);">Buying Guides</a></li>
+                    <li><a href="categories/maintenance.html" style="text-decoration:none; color: var(--dark);">Maintenance &amp; DIY</a></li>
+                    <li><a href="categories/ev-tech.html" style="text-decoration:none; color: var(--dark);">EV &amp; Future Tech</a></li>
+                    <li><a href="categories/news.html" style="text-decoration:none; color: var(--dark);">News &amp; Trends</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>About DriveElite</h3>
+                <p style="margin-top: 10px; color: #333;">
+                    We publish long-form reviews and safety-first DIY guides. No thin content, no clickbait—just practical, technical coverage.
+                </p>
+                <p style="margin-top: 10px;">
+                    <a href="about.html" style="color: var(--dark); text-decoration: underline;">Meet the team</a>
+                </p>
+            </div>
+
+            <div class="ad-unit ad-infeed">
+                <div class="ad-placeholder">Advertisement</div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 DriveElite</p>
+        <nav>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</footer>
 </body>
 </html>
